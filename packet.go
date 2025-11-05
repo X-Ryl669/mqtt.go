@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/srishina/mqtt.go/internal/mqttutil"
-	"github.com/srishina/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
 )
 
 var (

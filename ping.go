@@ -3,7 +3,7 @@ package mqtt
 import (
 	"io"
 
-	"github.com/srishina/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
 )
 
 // PingReq MQTT ping request control packet

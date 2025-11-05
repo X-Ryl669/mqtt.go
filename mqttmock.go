@@ -9,7 +9,7 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/srishina/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
 )
 
 type mqttMockTester struct {

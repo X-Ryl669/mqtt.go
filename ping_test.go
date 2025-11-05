@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/srishina/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/srishina/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
 )
 
 // PropertyID defines the MQTT property identifier

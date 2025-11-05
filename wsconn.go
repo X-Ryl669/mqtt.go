@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/srishina/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
 )
 
 // WebsocketConn concrete implementation of Connection

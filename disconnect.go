@@ -6,10 +6,10 @@ import (
 	"io"
 	"strings"
 
-	"github.com/srishina/mqtt.go/internal/mqttutil"
-	"github.com/srishina/mqtt.go/internal/packettype"
-	"github.com/srishina/mqtt.go/internal/properties"
-	"github.com/srishina/mqtt.go/internal/reasoncode"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/properties"
+	"github.com/X-Ryl669/mqtt.go/internal/reasoncode"
 )
 
 // DisconnectReasonCode indicates DISCONNECT MQTT reason code

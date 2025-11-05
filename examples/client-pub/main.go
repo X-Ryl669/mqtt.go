@@ -9,7 +9,7 @@ import (
 	"os"
 	"strconv"
 
-	mqtt "github.com/srishina/mqtt.go"
+	mqtt "github.com/X-Ryl669/mqtt.go"
 )
 
 var usageStr = `
@@ -20,7 +20,7 @@ var usageStr = `
 		-id, --clientid <client ID> Client identifier - optional"
 		-k, --keepalive <keep alive> Keep alive - optional, default: 0"
 		-cs, --cleanstart <Clean start> Start clean - a new session is created in broker - optional, default: true"
-	
+
 	example:
 		client-pub -b ws://mqtt.eclipseprojects.io:80/mqtt "TEST/GREETING" 1 "Willkommen"
 `

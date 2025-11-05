@@ -13,7 +13,7 @@ import (
 
 	_ "net/http/pprof"
 
-	mqtt "github.com/srishina/mqtt.go"
+	mqtt "github.com/X-Ryl669/mqtt.go"
 )
 
 var usageStr = `

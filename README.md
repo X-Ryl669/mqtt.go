@@ -9,7 +9,7 @@ Go implementation of MQTTv5 protocol
 
 ```bash
 # Go client
-go get github.com/srishina/mqtt.go
+go get github.com/X-Ryl669/mqtt.go
 ```
 
 # Run the tests

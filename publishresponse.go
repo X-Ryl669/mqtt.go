@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/srishina/mqtt.go/internal/mqttutil"
-	"github.com/srishina/mqtt.go/internal/packettype"
-	"github.com/srishina/mqtt.go/internal/properties"
-	"github.com/srishina/mqtt.go/internal/reasoncode"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/packettype"
+	"github.com/X-Ryl669/mqtt.go/internal/properties"
+	"github.com/X-Ryl669/mqtt.go/internal/reasoncode"
 )
 
 // PublishResponseProperties MQTT PUBACK, PUBREC, PUBREL, PUBCOMP properties
@@ -101,10 +101,10 @@ var pubAckReasonCodeText = map[PubAckReasonCode]string{
 
 var pubAckReasonCodeDesc = map[PubAckReasonCode]string{
 	PubAckReasonCodeSuccess: "The message is accepted. Publication of the QoS 1 message proceeds.",
-	PubAckReasonCodeNoMatchingSubscribers: `The message is accepted but there are no subscribers. This is sent only 
-											by the Server. If the Server knows that there are no matching subscribers, 
+	PubAckReasonCodeNoMatchingSubscribers: `The message is accepted but there are no subscribers. This is sent only
+											by the Server. If the Server knows that there are no matching subscribers,
 											it MAY use this Reason Code instead of 0x00 (Success).`,
-	PubAckUnspecifiedError: `The receiver does not accept the publish but either does not want to reveal the reason, 
+	PubAckUnspecifiedError: `The receiver does not accept the publish but either does not want to reveal the reason,
 									or it does not match one of the other values.`,
 	PubAckImplSpecificError:     "The PUBLISH is valid but the receiver is not willing to accept it. ",
 	PubAckImplNotAuthorized:     "The PUBLISH is not authorized.",
@@ -348,7 +348,7 @@ var pubRelReasonCodeText = map[PubRelReasonCode]string{
 
 var pubRelReasonCodeDesc = map[PubRelReasonCode]string{
 	PubRelReasonCodeSuccess: "Message released.",
-	PubRelPacketIdentifierNotFound: `The Packet Identifier is not known. 
+	PubRelPacketIdentifierNotFound: `The Packet Identifier is not known.
 				This is not an error during recovery, but at other times indicates a mismatch between the Session State on the Client and Server.`,
 }
 
@@ -429,7 +429,7 @@ var pubCompReasonCodeText = map[PubCompReasonCode]string{
 
 var pubCompReasonCodeDesc = map[PubCompReasonCode]string{
 	PubCompReasonCodeSuccess: "Packet Identifier released. Publication of QoS 2 message is complete.",
-	PubCompPacketIdentifierNotFound: `The Packet Identifier is not known. 
+	PubCompPacketIdentifierNotFound: `The Packet Identifier is not known.
 				This is not an error during recovery, but at other times indicates a mismatch between the Session State on the Client and Server.`,
 }
 

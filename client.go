@@ -11,7 +11,7 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/srishina/mqtt.go/internal/mqttutil"
+	"github.com/X-Ryl669/mqtt.go/internal/mqttutil"
 	"golang.org/x/sync/semaphore"
 )
 
