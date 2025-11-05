@@ -1,4 +1,4 @@
-module github.com/srishina/mqtt.go
+module github.com/X-Ryl669/mqtt.go
 
 go 1.22.0
 
