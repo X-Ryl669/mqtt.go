@@ -40,7 +40,7 @@ func (m *MessageReceiver) recvTimeout(timeoutMs uint) (*Publish, error) {
 	var element *Publish
 	select {
 	case element = <-m.ch:
-	case <-time.After(time.Duration(int64(timeoutMs) * 1000000)):
+	case <-time.After(time.Duration(int64(timeoutMs) * time.MicroSeconds)):
 		return nil, nil
 	case <-m.closed:
 		return nil, fmt.Errorf("channel is closed")
